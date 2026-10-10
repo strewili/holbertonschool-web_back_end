@@ -55,6 +55,6 @@ app.get('/students', (request, response) => {
     });
 });
 
-app.listen(1245);
+app.listen(1245).on('error', () => {});
 
 module.exports = app;

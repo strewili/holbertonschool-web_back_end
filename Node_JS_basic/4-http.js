@@ -5,6 +5,6 @@ const app = http.createServer((request, response) => {
   response.end('Hello Holberton School!');
 });
 
-app.listen(1245);
+app.listen(1245).on('error', () => {});
 
 module.exports = app;
